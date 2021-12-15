@@ -6,9 +6,4 @@ class rkhunter::package
     'rkhunter':
       ensure => latest
   }
-  package
-  {
-    'prelink':
-      ensure => latest
-  }
 }
