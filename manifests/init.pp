@@ -36,7 +36,6 @@ class rkhunter
   $existwhitelist = $rkhunter::params::existwhitelist,
   $hash_cmd = $rkhunter::params::hash_cmd,
   $hash_fld_idx = $rkhunter::params::hash_fld_idx,
-  $ignore_prelink_dep_err = $rkhunter::params::ignore_prelink_dep_err,
   $immutable_set = $rkhunter::params::immutable_set,
   $immutwhitelist = $rkhunter::params::immutwhitelist,
   $inetd_allowed_svc = $rkhunter::params::inetd_allowed_svc,
