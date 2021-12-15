@@ -132,7 +132,6 @@ class rkhunter::params
   ]
   $hash_cmd = undef
   $hash_fld_idx = 1
-  $ignore_prelink_dep_err = undef
   $immutable_set = 0
   $immutwhitelist = undef
   $inetd_allowed_svc = undef
