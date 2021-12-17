@@ -71,7 +71,7 @@
 <% end -%>
 <% if defined?(@mail_cmd) -%>MAIL_CMD=<%= @mail_cmd %>
 <% end -%>
-<% @mail_on_warning.each do |itmmail_on_warning| -%>MAIL-ON-WARNING=<%= itmmail_on_warning %>
+<% if defined?(@mail_on_warning) -%>MAIL-ON-WARNING=<%= @mail_on_warning %>
 <% end -%>
 <% if defined?(@mirrors_mode) -%>MIRRORS_MODE=<%= @mirrors_mode %>
 <% end -%>
