@@ -8,7 +8,8 @@ class rkhunter::exec
       path        => '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin',
       tries       => 2, # It failes if there are updates after install, running it twice will make sure it's updated.
       before      => Exec['RKHunter_Propupd'],
-      refreshonly => true
+      #refreshonly => true
+      onlyif => '/usr/bin/test ! -f /var/lib/rkhunter/db/rkhunter.dat',
   }
   exec
   {
